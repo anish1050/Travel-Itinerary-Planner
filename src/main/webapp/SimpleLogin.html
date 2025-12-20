@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Login - WanderCraft</title>
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap')
+	;
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+
+.login-container {
+	background: white;
+	padding: 40px;
+	border-radius: 15px;
+	border: 2px solid #333;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+}
+
+h2 {
+	color: #333;
+	margin-bottom: 30px;
+	font-weight: 600;
+}
+
+.form-group {
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	color: #333;
+	font-weight: 500;
+}
+
+input {
+	width: 100%;
+	padding: 12px;
+	border: none;
+	border-bottom: 2px solid #ddd;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	outline: none;
+	background: transparent;
+	transition: border-color 0.3s ease;
+}
+
+input:focus {
+	border-bottom-color: #333;
+}
+
+.btn-login {
+	background: beige;
+	border: 2px solid #333;
+	color: #333;
+	padding: 12px 30px;
+	border-radius: 10px;
+	font-weight: 600;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+	margin-top: 20px;
+}
+
+.btn-login:hover {
+	background: #333;
+	color: beige;
+	transform: translateY(-2px);
+}
+
+.test-users {
+	margin-top: 30px;
+	padding: 20px;
+	background: #f8f9fa;
+	border-radius: 10px;
+	text-align: left;
+}
+
+.test-users h4 {
+	margin-bottom: 15px;
+	color: #333;
+}
+
+.user-info {
+	margin: 10px 0;
+	font-size: 0.9rem;
+	color: #666;
+}
+
+.back-link {
+	margin-top: 20px;
+	display: block;
+	color: #666;
+	text-decoration: none;
+}
+
+.back-link:hover {
+	color: #333;
+}
+</style>
+</head>
+<body>
+	<div class="login-container">
+		<h2>🔓 Simple Login Test</h2>
+
+		<form action="Simple_Authentication" method="post">
+			<div class="form-group">
+				<label for="username">Username:</label> <input type="text"
+					id="username" name="log_username" required>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password:</label> <input type="password"
+					id="password" name="log_password" required>
+			</div>
+
+			<button type="submit" class="btn-login">Login</button>
+		</form>
+
+		<div class="test-users">
+			<h4>Test Users (from your database):</h4>
+			<div class="user-info">
+				<strong>Username:</strong> anish <strong>Password:</strong> 123
+			</div>
+			<div class="user-info">
+				<strong>Username:</strong> abhi <strong>Password:</strong> 123
+			</div>
+			<div class="user-info">
+				<strong>Username:</strong> test <strong>Password:</strong> 1234
+			</div>
+			<div class="user-info">
+				<strong>Username:</strong> sufi <strong>Password:</strong> 123
+			</div>
+		</div>
+
+		<a href="LoginPage.html" class="back-link">← Back to Main Login</a>
+	</div>
+</body>
+</html>

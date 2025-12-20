@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>China Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container"
+				href="FinalUserLoginProfile.jsp"> <video id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="bg-light text-center py-5">
+		<h3 class="display-4">Explore China</h3>
+		<p class="lead">Explore the beauty and heritage of China with our
+			curated travel itinerary.</p>
+	</section>
+
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Beijing.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-2: Beijing (Capital City)</h5>
+						<p class="card-text">Activities:
+						<form action="China_Itinerary" method="post">
+							<label><input type="checkbox" name="beijing_op1"
+								value="Visit Tiananmen Square and the Forbidden City">Visit
+								Tiananmen Square and the Forbidden City</label><br> <label><input
+								type="checkbox" name="beijing_op2"
+								value="Stroll through Jingshan Park for panoramic views of the Forbidden City">Stroll
+								through Jingshan Park for panoramic views of the Forbidden City</label><br>
+							<label><input type="checkbox" name="beijing_op3"
+								value="Explore the Temple of Heaven">Explore the Temple
+								of Heaven</label><br> <input type="text" name="city"
+								value="beijing" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Xi'an.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 3-4: Xi'an (Ancient Capital)</h5>
+						<p class="card-text">Activities:
+						<form action="China_Itinerary" method="post">
+							<label><input type="checkbox" name="xi_op1"
+								value="Visit the Terracotta Warriors and Horses Museum">Visit
+								the Terracotta Warriors and Horses Museum</label><br> <label><input
+								type="checkbox" name="xi_op2"
+								value="Explore the Ancient City Wall (rent a bike for a fun ride along the wall)">Explore
+								the Ancient City Wall (rent a bike for a fun ride along the
+								wall)</label><br> <label><input type="checkbox"
+								name="xi_op3"
+								value="Stroll through the Muslim Quarter for street food like roujiamo (Chinese burger)">Stroll
+								through the Muslim Quarter for street food like roujiamo
+								(Chinese burger)</label><br> <input type="text" name="city"
+								value="xi" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Kyoto.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 5-6: Chengdu (Panda Capital)</h5>
+						<p class="card-text">Activities:
+						<form action="China_Itinerary" method="post">
+
+							<label><input type="checkbox" name="chengdu_op1"
+								value="Visit the Chengdu Research Base of Giant Panda Breeding">Visit
+								the Chengdu Research Base of Giant Panda Breeding</label><br> <label><input
+								type="checkbox" name="chengdu_op2"
+								value="Explore Jinli Ancient Street for local snacks and souvenirs">Explore
+								Jinli Ancient Street for local snacks and souvenirs</label><br> <label><input
+								type="checkbox" name="chengdu_op3"
+								value="Visit Wuhou Shrine and the adjacent Wuhou Memorial Temple">Visit
+								Wuhou Shrine and the adjacent Wuhou Memorial Temple</label><br> <label><input
+								type="checkbox" name="chengdu_op4"
+								value="Relax in People’s Park and experience a traditional tea house">Relax
+								in People’s Park and experience a traditional tea house</label><br>
+							<input type="text" name="city" value="chengdu" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

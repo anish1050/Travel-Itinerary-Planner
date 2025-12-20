@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indonesia Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container"
+				href="FinalUserLoginProfile.jsp"> <video id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="bg-light text-center py-5">
+		<h3 class="display-4">Explore Indonesia</h3>
+		<p class="lead">Discover the diverse islands, rich culture, and
+			natural wonders of Indonesia with our curated travel itinerary.</p>
+	</section>
+
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Jakarta.jpg" class="card-img-top" alt="Jakarta Skyline">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-2: Jakarta (Capital City)</h5>
+						<p class="card-text">Activities:
+						<form action="Indonesia_Itinerary" method="post">
+							<label><input type="checkbox" name="jakarta_op1"
+								value="Visit the National Monument (Monas)">Visit the
+								National Monument (Monas)</label><br> <label><input
+								type="checkbox" name="jakarta_op2"
+								value="Explore Kota Tua (Old Town) – colonial buildings and cafés">Explore
+								Kota Tua (Old Town) – colonial buildings and cafés</label><br> <label><input
+								type="checkbox" name="jakarta_op3"
+								value="Visit Istiqlal Mosque and Jakarta Cathedral">Visit
+								Istiqlal Mosque and Jakarta Cathedral</label><br> <label><input
+								type="checkbox" name="jakarta_op4"
+								value="Visit Taman Mini Indonesia Indah cultural park">Visit
+								Taman Mini Indonesia Indah cultural park</label><br> <input
+								type="text" name="city" value="jakarta" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Yogyakarta.jpg" class="card-img-top"
+						alt="Borobudur Temple">
+					<div class="card-body">
+						<h5 class="card-title">Day 3-4: Yogyakarta (Cultural
+							Heartland)</h5>
+						<p class="card-text">Activities:
+						<form action="Indonesia_Itinerary" method="post">
+							<label><input type="checkbox" name="yogya_op1"
+								value="Visit Borobudur Temple (UNESCO site, sunrise tour)">Visit
+								Borobudur Temple (UNESCO site, sunrise tour)</label><br> <label><input
+								type="checkbox" name="yogya_op2"
+								value="Explore Prambanan Temple (Hindu architecture)">Explore
+								Prambanan Temple (Hindu architecture)</label><br> <label><input
+								type="checkbox" name="yogya_op3"
+								value="Visit Sultan's Palace (Keraton) and Taman Sari Water Castle">Visit
+								Sultan's Palace (Keraton) and Taman Sari Water Castle</label><br> <label><input
+								type="checkbox" name="yogya_op4"
+								value="Stroll through Malioboro Street for shopping and street food">Stroll
+								through Malioboro Street for shopping and street food</label><br> <input
+								type="text" name="city" value="yogyakarta" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img
+						src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=400&h=250&fit=crop"
+						alt="Bali Rice Terraces">
+					<div class="card-body">
+						<h5 class="card-title">Day 5-7: Bali (Island of the Gods)</h5>
+						<p class="card-text">Activities:
+						<form action="Indonesia_Itinerary" method="post">
+
+							<label><input type="checkbox" name="bali_op1"
+								value="Visit Tegallalang Rice Terraces and Sacred Monkey Forest">Visit
+								Tegallalang Rice Terraces and Sacred Monkey Forest</label><br> <label><input
+								type="checkbox" name="bali_op2"
+								value="Mount Batur sunrise trek and Tirta Empul Temple">Mount
+								Batur sunrise trek and Tirta Empul Temple</label><br> <label><input
+								type="checkbox" name="bali_op3"
+								value="Visit Uluwatu Temple and enjoy Kecak fire dance at sunset">Visit
+								Uluwatu Temple and enjoy Kecak fire dance at sunset</label><br> <label><input
+								type="checkbox" name="bali_op4"
+								value="Relax at Padang Padang Beach and explore Seminyak nightlife">Relax
+								at Padang Padang Beach and explore Seminyak nightlife</label><br> <input
+								type="text" name="city" value="bali" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

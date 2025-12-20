@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italy Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container"
+				href="FinalUserLoginProfile.jsp"> <video id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="bg-light text-center py-5">
+		<h3 class="display-4">Explore Italy</h3>
+		<p class="lead">Discover ancient Rome, Renaissance Florence, and
+			romantic Venice with our curated 7-day travel itinerary through
+			Italy's most iconic cities.</p>
+	</section>
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Rome.avif" class="card-img-top"
+						alt="Rome Colosseum and Forum">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-3: Rome (The Eternal City)</h5>
+						<p class="card-text">Activities:
+						<form action="Italy_Itinerary" method="post">
+							<label><input type="checkbox" name="rome_op1"
+								value="Explore the Colosseum, Roman Forum, and Palatine Hill">Explore
+								the Colosseum, Roman Forum, and Palatine Hill</label><br> <label><input
+								type="checkbox" name="rome_op2"
+								value="Toss a coin into the Trevi Fountain">Toss a coin
+								into the Trevi Fountain</label><br> <label><input
+								type="checkbox" name="rome_op3"
+								value="Stroll to the Spanish Steps in the evening">Stroll
+								to the Spanish Steps in the evening</label><br> <label><input
+								type="checkbox" name="rome_op4"
+								value="Morning at Vatican City: St. Peter's Basilica, Vatican Museums, and the Sistine Chapel">Morning
+								at Vatican City: St. Peter's Basilica, Vatican Museums, and the
+								Sistine Chapel</label><br> <label><input type="checkbox"
+								name="rome_op5" value="Visit Piazza Navona and Pantheon">Visit
+								Piazza Navona and Pantheon</label><br> <label><input
+								type="checkbox" name="rome_op6"
+								value="Enjoy a traditional Roman dinner in Trastevere">Enjoy
+								a traditional Roman dinner in Trastevere</label><br> <label><input
+								type="checkbox" name="rome_op7"
+								value="Explore Castel Sant'Angelo, or visit Villa Borghese & Borghese Gallery">Explore
+								Castel Sant'Angelo, or visit Villa Borghese & Borghese Gallery</label><br>
+							<input type="text" name="city" value="rome" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Florence.jpg" class="card-img-top"
+						alt="Florence Cathedral and Ponte Vecchio">
+					<div class="card-body">
+						<h5 class="card-title">Day 4-5: Florence (Art, Culture &
+							Tuscany)</h5>
+						<p class="card-text">Activities:
+						<form action="Italy_Itinerary" method="post">
+							<label><input type="checkbox" name="florence_op1"
+								value="See Duomo di Firenze (Cathedral) and climb Giotto's Bell Tower">See
+								Duomo di Firenze (Cathedral) and climb Giotto's Bell Tower</label><br>
+							<label><input type="checkbox" name="florence_op2"
+								value="Visit Uffizi Gallery (Botticelli, Da Vinci, Michelangelo)">Visit
+								Uffizi Gallery (Botticelli, Da Vinci, Michelangelo)</label><br> <label><input
+								type="checkbox" name="florence_op3"
+								value="Cross the Ponte Vecchio bridge">Cross the Ponte
+								Vecchio bridge</label><br> <label><input type="checkbox"
+								name="florence_op4"
+								value="Sunset at Piazzale Michelangelo for panoramic views">Sunset
+								at Piazzale Michelangelo for panoramic views</label><br> <label><input
+								type="checkbox" name="florence_op5"
+								value="Day trip to Tuscany - Chianti wine tour (vineyards, wine tasting)">Day
+								trip to Tuscany - Chianti wine tour (vineyards, wine tasting)</label><br>
+							<label><input type="checkbox" name="florence_op6"
+								value="Day trip to Tuscany - Visit Siena, San Gimignano, or Pisa">Day
+								trip to Tuscany - Visit Siena, San Gimignano, or Pisa</label><br> <input
+								type="text" name="city" value="florence" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Venice.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Day 6-7: Venice (Canals & Romance)</h5>
+						<p class="card-text">Activities:
+						<form action="Italy_Itinerary" method="post">
+
+							<label><input type="checkbox" name="venice_op1"
+								value="Take a vaporetto (water bus) along the Grand Canal">Take
+								a vaporetto (water bus) along the Grand Canal</label><br> <label><input
+								type="checkbox" name="venice_op2"
+								value="Explore St. Mark's Basilica, Doge's Palace, and Rialto Bridge">Explore
+								St. Mark's Basilica, Doge's Palace, and Rialto Bridge</label><br> <label><input
+								type="checkbox" name="venice_op3"
+								value="Optional: Gondola ride at sunset">Optional:
+								Gondola ride at sunset</label><br> <label><input
+								type="checkbox" name="venice_op4"
+								value="Visit nearby islands: Murano (glass-blowing)">Visit
+								nearby islands: Murano (glass-blowing)</label><br> <label><input
+								type="checkbox" name="venice_op5"
+								value="Visit nearby islands: Burano (colorful houses & lace-making)">Visit
+								nearby islands: Burano (colorful houses & lace-making)</label><br>
+							<label><input type="checkbox" name="venice_op6"
+								value="Leisure evening walk through quiet Venice alleys">Leisure
+								evening walk through quiet Venice alleys</label><br> <input
+								type="text" name="city" value="venice" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

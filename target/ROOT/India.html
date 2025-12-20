@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container"
+				href="FinalUserLoginProfile.jsp"> <video id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+
+	<section class="bg-light text-center py-5">
+		<h1 class="display-4">Explore India</h1>
+		<p class="lead">Discover the beauty and culture of India with our
+			curated travel itinerary.</p>
+	</section>
+
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Mumbai.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-2: Mumbai (Financial Hub)</h5>
+						<p class="card-text">Activities:
+						<form action="Indian_Itinerary" method="post">
+							<label><input type="checkbox" name="mumbai_op1"
+								value="Visit Gateway of India, Marine Drive, and Colaba">Visit
+								Gateway of India, Marine Drive, and Colaba</label><br> <label><input
+								type="checkbox" name="mumbai_op2"
+								value="Explore Elephanta Caves (ferry ride)">Explore
+								Elephanta Caves (ferry ride)</label><br> <label><input
+								type="checkbox" name="mumbai_op3"
+								value="Visit Siddhivinayak Temple and Haji Ali Dargah">Visit
+								Siddhivinayak Temple and Haji Ali Dargah</label><br> <input
+								type="text" name="city" value="mumbai" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Delhi.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 3-4: Delhi (Capital City)</h5>
+						<p class="card-text">Activities:
+						<form action="Indian_Itinerary" method="post">
+							<label><input type="checkbox" name="delhi_op1"
+								value="Visit Qutub Minar, India Gate, and Humayun's Tomb">Visit
+								Qutub Minar, India Gate, and Humayun's Tomb</label><br> <label><input
+								type="checkbox" name="delhi_op2"
+								value="Explore Red Fort and Jama Masjid">Explore Red
+								Fort and Jama Masjid</label><br> <label><input
+								type="checkbox" name="delhi_op3"
+								value="Stroll through Chandni Chowk and try local street food">Stroll
+								through Chandni Chowk and try local street food</label><br> <label><input
+								type="checkbox" name="delhi_op4"
+								value="Spend time at Lotus Temple and Akshardham Temple">Spend
+								time at Lotus Temple and Akshardham Temple</label><br> <input
+								type="text" name="city" value="delhi" hidden>
+
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Agra.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 5-6: Agra (Heritage City)</h5>
+						<p class="card-text">Activities:
+						<form action="Indian_Itinerary" method="post">
+							<label><input type="checkbox" name="agra_op1"
+								value="Visit the iconic Taj Mahal at sunrise">Visit the
+								iconic Taj Mahal at sunrise</label><br> <label><input
+								type="checkbox" name="agra_op2"
+								value="Explore Agra Fort and Mehtab Bagh">Explore Agra
+								Fort and Mehtab Bagh</label><br> <label><input
+								type="checkbox" name="agra_op4"
+								value="Visit Itimad-ud-Daulah's Tomb ('Baby Taj')">Visit
+								Itimad-ud-Daulah's Tomb ('Baby Taj')</label><br> <input type="text"
+								name="city" value="agra" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Japan Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container" href="HomePage.html"> <video
+					id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="bg-light text-center py-5">
+		<h3 class="display-4">Explore Japan</h3>
+		<p class="lead">Unveil the charm and traditions of Japan with our
+			curated travel itinerary.</p>
+	</section>
+
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Tokyo.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-2: Tokyo (Modern + Traditional
+							Capital)</h5>
+						<p class="card-text">Activities:
+						<form action="Japan_Itinerary" method="post">
+							<label><input type="checkbox" name="tokyo_op1"
+								value="Visit Asakusa and Senso-ji Temple">Visit Asakusa
+								and Senso-ji Temple</label><br> <label><input
+								type="checkbox" name="tokyo_op2"
+								value="Stroll through Ueno Park and visit Tokyo National Museum">Stroll
+								through Ueno Park and visit Tokyo National Museum</label><br> <label><input
+								type="checkbox" name="tokyo_op3"
+								value="Explore Akihabara for electronics and anime culture">Explore
+								Akihabara for electronics and anime culture</label><br> <input
+								type="text" name="city" value="tokyo" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Nikko.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 3: Nikko (Day Trip)</h5>
+						<p class="card-text">Activities:
+						<form action="Japan_Itinerary" method="post">
+							<label><input type="checkbox" name="nikko_op1"
+								value="Visit Nikko’s UNESCO World Heritage Sites, including: Toshogu Shrine, Futarasan Shrine">Visit
+								Nikko’s UNESCO World Heritage Sites, including: Toshogu Shrine,
+								Futarasan Shrine</label><br> <label><input type="checkbox"
+								name="nikko_op2" value="See the Kegon Falls and Lake Chuzenji">See
+								the Kegon Falls and Lake Chuzenji</label><br> <label><input
+								type="checkbox" name="nikko_op3"
+								value="Return to Tokyo in the evening">Return to Tokyo
+								in the evening</label><br> <input type="text" name="city"
+								value="nikko" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Kyoto.jpg" class="card-img-top" alt="Destination Image">
+					<div class="card-body">
+						<h5 class="card-title">Day 4-5: Kyoto (Cultural Heart of
+							Japan)</h5>
+						<p class="card-text">Activities:
+						<form action="Japan_Itinerary" method="post">
+
+							<label><input type="checkbox" name="kyoto_op1"
+								value="Visit Fushimi Inari Taisha (thousands of vermilion torii gates)">Visit
+								Fushimi Inari Taisha (thousands of vermilion torii gates)</label><br>
+							<label><input type="checkbox" name="kyoto_op2"
+								value="Explore Kiyomizu-dera Temple">Explore
+								Kiyomizu-dera Temple</label><br> <label><input
+								type="checkbox" name="kyoto_op3"
+								value="Stroll through the historic Higashiyama District">Stroll
+								through the historic Higashiyama District</label><br> <label><input
+								type="checkbox" name="kyoto_op4"
+								value="Evening visit to Gion for a chance to spot geishas">Evening
+								visit to Gion for a chance to spot geishas</label><br> <input
+								type="text" name="city" value="kyoto" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switzerland Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container"
+				href="FinalUserLoginProfile.jsp"> <video id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="bg-light text-center py-5">
+		<h3 class="display-4">Explore Switzerland</h3>
+		<p class="lead">Discover the breathtaking Alps, pristine lakes,
+			and charming cities of Switzerland with our curated travel itinerary.</p>
+	</section>
+
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Zurich.jpg" class="card-img-top"
+						alt="Zurich City and Lake">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-2: Zurich (Arrival & Swiss City
+							Life)</h5>
+						<p class="card-text">Activities:
+						<form action="Switzerland_Itinerary" method="post">
+							<label><input type="checkbox" name="zurich_op1"
+								value="Explore the Old Town (Altstadt) with cobbled streets and historic churches">Explore
+								the Old Town (Altstadt) with cobbled streets and historic
+								churches</label><br> <label><input type="checkbox"
+								name="zurich_op2"
+								value="Shop on Bahnhofstrasse, one of the world's most exclusive shopping streets">Shop
+								on Bahnhofstrasse, one of the world's most exclusive shopping
+								streets</label><br> <label><input type="checkbox"
+								name="zurich_op3" value="Take a scenic stroll along Lake Zurich">Take
+								a scenic stroll along Lake Zurich</label><br> <label><input
+								type="checkbox" name="zurich_op4"
+								value="Day trip to Rhine Falls, Europe's largest waterfall">Day
+								trip to Rhine Falls, Europe's largest waterfall</label><br> <input
+								type="text" name="city" value="zurich" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Lucerne.jpg" class="card-img-top"
+						alt="Lucerne Chapel Bridge and Mount Pilatus">
+					<div class="card-body">
+						<h5 class="card-title">Day 3-4: Lucerne & Mount Titlis</h5>
+						<p class="card-text">Activities:
+						<form action="Switzerland_Itinerary" method="post">
+							<label><input type="checkbox" name="lucerne_op1"
+								value="Visit Kapellbrücke (Chapel Bridge) and Lion Monument">Visit
+								Kapellbrücke (Chapel Bridge) and Lion Monument</label><br> <label><input
+								type="checkbox" name="lucerne_op2"
+								value="Take a lake cruise on Lake Lucerne">Take a lake
+								cruise on Lake Lucerne</label><br> <label><input
+								type="checkbox" name="lucerne_op3"
+								value="Ride the Pilatus Cogwheel Railway or visit Mount Rigi">Ride
+								the Pilatus Cogwheel Railway or visit Mount Rigi</label><br> <label><input
+								type="checkbox" name="lucerne_op4"
+								value="Full-day excursion to Mount Titlis with Rotair gondola and Cliff Walk">Full-day
+								excursion to Mount Titlis with Rotair gondola and Cliff Walk</label><br>
+							<input type="text" name="city" value="lucerne" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Jungfrau.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Day 5-6: Interlaken & Jungfrau Region</h5>
+						<p class="card-text">Activities:
+						<form action="Switzerland_Itinerary" method="post">
+
+							<label><input type="checkbox" name="interlaken_op1"
+								value="Scenic train ride via Golden Pass Line to Interlaken">Scenic
+								train ride via Golden Pass Line to Interlaken</label><br> <label><input
+								type="checkbox" name="interlaken_op2"
+								value="Explore Harder Kulm for panoramic views of Interlaken">Explore
+								Harder Kulm for panoramic views of Interlaken</label><br> <label><input
+								type="checkbox" name="interlaken_op3"
+								value="Day trip to Jungfraujoch - Top of Europe with Aletsch Glacier">Day
+								trip to Jungfraujoch - Top of Europe with Aletsch Glacier</label><br>
+							<label><input type="checkbox" name="interlaken_op4"
+								value="Visit Lauterbrunnen, Mürren, or Grindelwald for hiking">Visit
+								Lauterbrunnen, Mürren, or Grindelwald for hiking</label><br> <input
+								type="text" name="city" value="interlaken" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

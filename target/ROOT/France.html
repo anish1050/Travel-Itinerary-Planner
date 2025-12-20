@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>France Travel Itinerary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+body {
+	font-family: poppins;
+}
+
+span.brand-text {
+	margin-left: 30%;
+}
+
+video#logovideo {
+	height: 200px;
+	width: 250px;
+}
+
+a#myprofile {
+	text-decoration: none;
+	color: black;
+	margin-left: 66%;
+}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand logo-container"
+				href="FinalUserLoginProfile.jsp"> <video id="logovideo"
+					src="Yellow and Green Island Flat Illustrative Hotels and Travel Service Animated Logo.mp4"
+					autoplay muted></video>
+			</a> <span class="brand-text">WanderCraft</span>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<a id="myprofile" href="InitialUserLoginProfile.jsp">My Profile</a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="bg-light text-center py-5">
+		<h3 class="display-4">Explore France</h3>
+		<p class="lead">Discover the elegance, culture, and culinary
+			excellence of France with our curated travel itinerary.</p>
+	</section>
+
+
+	<section id="itinerary" class="container my-5">
+		<h2 class="text-center mb-4">Travel Itinerary</h2>
+		<div class="row">
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Paris.jpg" class="card-img-top" alt="Paris Eiffel Tower">
+					<div class="card-body">
+						<h5 class="card-title">Day 1-3: Paris (The City of Lights)</h5>
+						<p class="card-text">Activities:
+						<form action="France_Itinerary" method="post">
+							<label><input type="checkbox" name="paris_op1"
+								value="Visit the Eiffel Tower and stroll along the Seine River">Visit
+								the Eiffel Tower and stroll along the Seine River</label><br> <label><input
+								type="checkbox" name="paris_op2"
+								value="Tour the Louvre Museum and visit Notre-Dame Cathedral">Tour
+								the Louvre Museum and visit Notre-Dame Cathedral</label><br> <label><input
+								type="checkbox" name="paris_op3"
+								value="Explore Montmartre and see Sacré-Cœur Basilica">Explore
+								Montmartre and see Sacré-Cœur Basilica</label><br> <label><input
+								type="checkbox" name="paris_op4"
+								value="Relax in Luxembourg Gardens and enjoy Seine River dinner cruise">Relax
+								in Luxembourg Gardens and enjoy Seine River dinner cruise</label><br>
+							<input type="text" name="city" value="paris" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Versailles.jpg" class="card-img-top"
+						alt="Palace of Versailles">
+					<div class="card-body">
+						<h5 class="card-title">Day 4: Versailles (Day Trip)</h5>
+						<p class="card-text">Activities:
+						<form action="France_Itinerary" method="post">
+							<label><input type="checkbox" name="versailles_op1"
+								value="Explore the Hall of Mirrors and Royal Apartments">Explore
+								the Hall of Mirrors and Royal Apartments</label><br> <label><input
+								type="checkbox" name="versailles_op2"
+								value="Stroll through the magnificent Palace Gardens">Stroll
+								through the magnificent Palace Gardens</label><br> <label><input
+								type="checkbox" name="versailles_op3"
+								value="Rent a bike or golf cart for the grounds exploration">Rent
+								a bike or golf cart for the grounds exploration</label><br> <input
+								type="text" name="city" value="versailles" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card mb-4">
+					<img src="Loire Valley.jpg">
+					<div class="card-body">
+						<h5 class="card-title">Day 5-6: Loire Valley (Castles &
+							Countryside)</h5>
+						<p class="card-text">Activities:
+						<form action="France_Itinerary" method="post">
+
+							<label><input type="checkbox" name="loire_op1"
+								value="Visit Château de Chambord and Château de Chenonceau">Visit
+								Château de Chambord and Château de Chenonceau</label><br> <label><input
+								type="checkbox" name="loire_op2"
+								value="Wine tasting at a local Loire Valley vineyard">Wine
+								tasting at a local Loire Valley vineyard</label><br> <label><input
+								type="checkbox" name="loire_op3"
+								value="Explore medieval towns like Amboise or Saumur">Explore
+								medieval towns like Amboise or Saumur</label><br> <label><input
+								type="checkbox" name="loire_op4"
+								value="Stay overnight in a countryside hotel or château">Stay
+								overnight in a countryside hotel or château</label><br> <input
+								type="text" name="city" value="loire" hidden>
+							</p>
+							<button class="btn border-dark bg-warning-subtle">Add to
+								your Itinerary</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
