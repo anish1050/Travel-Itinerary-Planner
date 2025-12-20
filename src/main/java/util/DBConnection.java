@@ -2,27 +2,27 @@ package util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class DBConnection {
 
-	private static final String URL =
-		    "jdbc:mysql://gateway01.ap-southeast-1.prod.aws.tidbcloud.com:4000/wandercraft_db"
-		  + "?useSSL=true"
-		  + "&serverTimezone=UTC"
-		  + "&disableAbandonedConnectionCleanup=true";
-    private static final String USERNAME = "2QLepttZVfHrrRZ.root";
-    private static final String PASSWORD = "t2ZMtRiBehrh4SXj";
-
-    static {
+    public static Connection getConnection() {
+        Connection conn = null;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");  // Load JDBC driver
-        } catch (ClassNotFoundException e) {
+            String host = System.getenv("DB_HOST");
+            String port = System.getenv("DB_PORT");
+            String db   = System.getenv("DB_NAME");
+            String user = System.getenv("DB_USER");
+            String pass = System.getenv("DB_PASSWORD");
+
+            String url = "jdbc:mysql://" + host + ":" + port + "/" + db +
+                         "?useSSL=true&requireSSL=true&serverTimezone=UTC";
+
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            conn = DriverManager.getConnection(url, user, pass);
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(URL, USERNAME, PASSWORD);
+        return conn;
     }
 }
