@@ -6,13 +6,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import org.mindrot.jbcrypt.BCrypt;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import util.DBConnection;
 
 @WebServlet("/ForgotPassword")
 public class ForgotPassword extends HttpServlet {
@@ -25,11 +24,14 @@ public class ForgotPassword extends HttpServlet {
         String securityquestion = request.getParameter("security_question");
         String securityanswer = request.getParameter("security_answer");
         String newPassword = request.getParameter("new_password");
-
+        
+        String url = "jdbc:mysql://localhost:3306/java_project";
+        String dbUsername = "root";
+        String dbPassword = "Anish@1050";
         
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection conn = DBConnection.getConnection();
+            Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
             
             
             PreparedStatement checkStmt = conn.prepareStatement(
@@ -45,11 +47,11 @@ public class ForgotPassword extends HttpServlet {
             PrintWriter out = response.getWriter();
             
             if (rs.next()) {
-               
+                String hashedPassword = BCrypt.hashpw(newPassword, BCrypt.gensalt());
                 PreparedStatement updateStmt = conn.prepareStatement(
                     "UPDATE registered_users SET password = ? WHERE username = ?"
                 );
-                updateStmt.setString(1, newPassword);
+                updateStmt.setString(1, hashedPassword);
                 updateStmt.setString(2, username);
                 updateStmt.executeUpdate();
                 
