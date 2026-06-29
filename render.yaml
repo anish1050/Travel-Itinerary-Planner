@@ -1,0 +1,21 @@
+# Exported from Render on 2026-06-29T17:52:09Z
+version: "1"
+services:
+- type: web
+  name: Travel-Itinerary-Planner
+  runtime: docker
+  repo: https://github.com/anish1050/Travel-Itinerary-Planner
+  plan: free
+  envVars:
+  - key: PORT
+    sync: false
+  - key: DB_PASSWORD
+    sync: false
+  - key: DB_USER
+    sync: false
+  - key: DB_URL
+    sync: false
+  region: singapore
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+  autoDeployTrigger: commit
